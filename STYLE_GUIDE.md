@@ -139,6 +139,9 @@ incremented with repository-specific content.
 - **Atomic Changes**: PRs MUST address a single concern and be small enough for
   focused review. Large, multi-concern PRs SHOULD be split into separate
   submissions.
+- **No Merge Commits**: Pull request branches MUST NOT contain merge commits.
+  Contributors MUST rebase onto the target branch when necessary to keep history
+  linear.
 - **Review Requirement**: All PRs REQUIRE review from at least two Maintainers.
 - **CI/CD Gates**:
   - **Standard**: All PRs MUST generally pass automated checks (linting, testing,
